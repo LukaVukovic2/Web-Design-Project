@@ -1,0 +1,88 @@
+body {
+    background-image:url(images/andrescamp.jpg);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    color: rgb(202, 201, 201);
+    text-align: center;
+    min-height: 100px;
+    background-color: rgb(3, 3, 45);
+}
+main {
+    margin-top: 20px;
+}
+article {
+    background-color: rgb(3, 3, 45);
+    color: white;
+    margin: 8% 4% 0 4%;
+    padding: 2%;
+    border-radius: 5%;
+    border: 7px solid rgb(49,0,0);
+}
+nav 
+    ul {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+    }
+    li {
+        float: left;
+    }
+    a.nav:link,a.nav:visited
+    {
+        height:30px;
+        line-height:200%;
+        display:block;
+        color:#FFFFFF;
+        background-color:rgb(49, 0, 0);
+        text-align:center;
+        text-decoration:none;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    a.nav:hover,a.nav:active
+    {
+        background-color: rgb(221, 57, 57);
+    }
+
+    @media (max-width: 991px) {
+    li 
+    {
+        border-bottom: 1px solid white;
+    }
+}
+
+hr {
+    border: 2px solid rgb(49, 0, 0);
+    margin: 0px;
+}
+a {
+    color: rgb(174, 49, 49);
+}
+div {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .kategorija {
+      background-color: rgb(3, 3, 45);
+      float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #8477dd;
+  }
