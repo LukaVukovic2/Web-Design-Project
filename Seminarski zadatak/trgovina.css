@@ -1,0 +1,198 @@
+body {
+    background-image:url(images/andrescamp.jpg);
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    font-family: "Lato";
+}
+h3 {
+    font-family: "Bebas Neue";
+    font-size: 19px;
+}
+header, footer {
+    color: rgb(202, 201, 201);
+    text-align: center;
+    min-height: 100px;
+    background-color: rgb(3, 3, 45);
+}
+header .container, nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(images/akcija.jpg);
+    background-size: contain;
+    min-height: 400px;
+}
+header > img {
+    width: 6%;
+}
+li {
+    width: 20%;
+    background-color: rgb(49,0,0);
+    list-style-type: none;
+}
+
+a.nav:link,a.nav:visited {
+    height:30px;
+    line-height:200%;
+    display:block;
+    color:#FFFFFF;
+    background-color:rgb(49, 0, 0);
+    text-align:center;
+    text-decoration:none;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+a.nav:hover,a.nav:active {
+    background-color: rgb(221, 57, 57);
+}
+main .flex-container {
+    margin: 0 auto;
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(2, 2, 25);
+    justify-content: space-around;
+    border: 5px solid rgb(49, 0, 0);
+    border-top: 0;
+    padding-top: 50px;
+}
+.flex-container div {
+    width: 21.5%;
+    height: 340px;
+    background-color: rgb(211, 211, 211);
+    margin-bottom: 2%;
+    border-radius: 6%;
+    border: 5px solid rgb(221, 57, 57);
+    position: relative;
+    overflow: hidden;
+}
+.flex-container img{
+    width: 100%;
+}
+.flex-container div:hover {
+    height: 380px;
+    transition: 0.25s ease-in-out;
+    box-shadow: 0px 0px 10px 3px #ff6b3e;
+}
+
+div img {
+    border-radius: 6% 6% 0 0;
+}
+button {
+    width: 50%;
+    color: white;
+    background-color: rgb(221, 57, 57);
+    text-decoration: none; 
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: none;
+    transition: 0.5s ease-out;
+    position: absolute;
+    bottom: 5px;
+}
+main b, p, h3 {
+    padding: 5px;
+}
+.akcija {
+    color: rgb(255, 225, 0);
+    background-color: rgb(39, 39, 39);
+    font-size: 70px;
+    border-radius: 80px;
+    padding: 20px;
+}
+.akcija2 {
+    color: yellow;
+    text-shadow: 1px 1px black;
+    width: 100%;
+    text-align: center;
+}
+.flex-container div:hover .hide{
+    display: block;
+}
+.flex-container img:hover {
+   transform: scale(1.1);
+   transition-duration: 0.5s;
+}
+.hide:hover {
+    background-color: rgb(255, 162, 162);
+    box-shadow: 0px 0px 5px 1px red;
+}
+mark {
+    color: red;
+}
+small {
+    font-size: 15px;
+}
+.container {
+    flex-wrap: wrap;
+}
+@media (max-width:991px) {
+    .akcija {
+        width: 50%;
+        font-size: 60px;
+    }
+    li {
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+    header > img {
+        width: 15%;
+    }
+    main .flex-container div {
+        width: 35%;
+        height: 450px;
+    }
+    main .flex-container div:hover {
+        height: 490px;
+    }
+    .flex-container img {
+        width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .akcija {
+        width: 50%;
+        font-size: 50px;
+    }
+    li {
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+    header > img {
+        width: 20%;
+    }
+    .flex-container div {
+        width: 50%;
+        height: 490px;
+    }
+    .flex-container div:hover {
+        height: 510px;
+    }
+    .flex-container img {
+        width: 100%;
+    }
+    .akcija {
+        width: 75%;
+    }
+}
+@media (max-width:550px) {
+    .flex-container div {
+        width: 50%;
+        height: 380px;
+    }
+    .flex-container div:hover {
+        height: 415px;
+    }
+    .flex-container img {
+        width: 100%;
+    }
+}
